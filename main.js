@@ -75,19 +75,19 @@
           .attr('cx', scale * 8.48)
           .attr('cy', scale * 0)
           .attr('fill', "#E87200")
-          .attr('r', 3)
+          .attr('r', 5)
           .attr('stroke', "none");
         svg.append('circle')
           .attr('cx', scale * 14.38)
           .attr('cy', scale * 2.5)
           .attr('fill', "#2F5DA6")
-          .attr('r', 3)
+          .attr('r', 5)
           .attr('stroke', "none");
         svg.append('circle')
           .attr('cx', scale * 1)
           .attr('cy', scale * 3.18)
           .attr('fill', "#E12D27")
-          .attr('r', 3)
+          .attr('r', 5)
           .attr('stroke', "none");
         return svg;
       }
@@ -139,10 +139,10 @@
               var median = medians[key];
               var speed = median / diff;
               svg.selectAll('.' + line + '.' + FROM + '-' + TO + ' line')
-                .call(offset(2, dir, speed));
+                .call(offset(3, dir, speed));
             } else {
               svg.selectAll('.' + line + '.' + FROM + '-' + TO + ' line')
-                .call(offset(2, dir, null));
+                .call(offset(3, dir, null));
             }
           }
 
