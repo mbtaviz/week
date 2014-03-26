@@ -147,8 +147,8 @@
           }
 
           inputData.links.forEach(function (link) {
-            update(link.source.id, link.target.id, -1);
-            update(link.target.id, link.source.id, 1);
+            update(link.source.id, link.target.id, 1);
+            update(link.target.id, link.source.id, -1);
           });
         }
       });
