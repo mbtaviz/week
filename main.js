@@ -4,8 +4,8 @@
   d3.json('medians.json', function (medians) {
     d3.json('data.json', function (inputData) {
       var margin = {top: 10, right: 10, bottom: 10, left: 10},
-          outerWidth = 200,
-          outerHeight = 200,
+          outerWidth = 300,
+          outerHeight = 300,
           delay = 100,
           width = outerWidth - margin.left - margin.right,
           height = outerHeight - margin.top - margin.bottom,
