@@ -9,33 +9,25 @@ body {
   color: #333;
   font-size: 20px;
 }
-
-line {
-  shape-rendering: crispEdges;
-  stroke-width: 3px;
+path {
+  /*shape-rendering: crispEdges;*/
+  /*transition: fill .25s ease;*/
+  stroke-width: 0.5;
+  stroke: black;
 }
 
-line.main {
-  stroke-opacity: 0.8;
-  stroke-width: 0px !important;
+.nodata {
+  fill: #ccc;
 }
-circle {
-  sroke-opacity: 0.5;
+.ok {
+  fill: rgb(22,167,34);
 }
-
-
-line.nodata {
-  stroke: #ccc;
+.slowing {
+  fill: rgb(253,158,59);
 }
-line.ok {
-  stroke: rgb(22,167,34)
+.slow {
+  fill: rgb(251,0,7);
 }
-line.slowing {
-  stroke: rgb(253,158,59);
-}
-line.slow {
-  stroke: rgb(251,0,7);
-}
-line.stopped {
-  stroke: rgb(174,0,4);
+.stopped {
+  fill: rgb(174,0,4);
 }
