@@ -28,15 +28,15 @@
 
       var svg;
       function draw () {
-        var m = Math.min(window.innerWidth, window.innerHeight) / 20;
+        var m = Math.min(window.innerWidth || 300, window.innerHeight || 300) / 20;
         margin = {
           top: m,
           right: m,
           bottom: m,
           left: m
         };
-        var outerWidth = window.innerWidth - 10,
-            outerHeight = window.innerHeight - 40,
+        var outerWidth = (window.innerWidth || 300) - 10,
+            outerHeight = (window.innerHeight || 300) - 40,
             width = outerWidth - margin.left - margin.right,
             height = outerHeight - margin.top - margin.bottom;
         var xScale = width / (xRange[1] - xRange[0]);
